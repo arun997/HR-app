@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :admin_users, ActiveAdmin::Devise.config
+  devise_for :users
+  devise_for :admin_users,ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  resources :employees
+  resources :employees, :users
+  
+  root to: "employees#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
