@@ -10,6 +10,17 @@ class UserDevise < ActiveRecord::Migration
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
+      t.string :first_name
+      t.string :last_name
+      t.string :address
+      t.integer :phone
+      t.string :email
+      t.date :DOB
+      t.date :hire_date
+      t.string :dept
+      t.string :role
+      t.string :salary
+      t.string :manager
 
       ## Recoverable
       t.string   :reset_password_token

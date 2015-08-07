@@ -1,5 +1,5 @@
 ActiveAdmin.register User do
-  permit_params :email, :password, :password_confirmation
+  permit_params :email, :password, :password_confirmation, :first_name, :last_name, :address, :phone, :email, :hire_date, :dept, :role, :salary, :manager, :id, :user_id
   index do
     selectable_column
     id_column
@@ -15,14 +15,27 @@ ActiveAdmin.register User do
   filter :sign_in_count
   filter :created_at
 
+  
   form do |f|
-    f.inputs "User Details" do
+    f.inputs "Employee Details" do
+      f.input :first_name
+      f.input :last_name
+      f.input :address
+      f.input :phone
       f.input :email
+      f.input :hire_date
+      f.input :dept
+      f.input :role
+      f.input :salary
+      f.input :manager
       f.input :password
       f.input :password_confirmation
+    #      f.select :sex, [['Male', 'male'],['Female', 'female']]
+     
     end
     f.actions
   end
+
 
 end
 
