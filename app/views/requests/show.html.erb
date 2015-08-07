@@ -1,0 +1,29 @@
+
+
+<p>
+  <strong>Employee name:</strong>
+  <%= @request.employee_name %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @request.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @request.end_date %>
+</p>
+
+<p>
+  <strong>Leave type:</strong>
+  <%= @request.leave_type %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @request.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>

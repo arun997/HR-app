@@ -9,10 +9,10 @@ class UsersController < ApplicationController
 
   def show
     @user = current_user
-   # if @user 
-     # @request = @user.requests.all
-     # render action: :show
-    #end
+    if @user 
+      @request = @user.requests.all
+      render action: :show
+    end
   end
     
 #    @request = Request.find(current_user.user_id)
@@ -53,7 +53,7 @@ class UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:user_id, :id, :first_name, :last_name, :address, :phone, :email, :DOB, :hire_date, :dept, :role, :salary, :manager)
+      params.require(:user).permit(:user_id, :id, :first_name, :last_name, :address, :phone, :email, :hire_date, :dept, :role, :salary, :manager, :start_date)
     end
 
 

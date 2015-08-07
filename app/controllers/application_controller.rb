@@ -14,6 +14,10 @@ class ApplicationController < ActionController::Base
 
   end
   
+  def employee_name 
+    first_name + " " + last_name
+  end
+    
   def authenticate_user!
 
     if user_signed_in?
