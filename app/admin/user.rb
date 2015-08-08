@@ -30,7 +30,6 @@ ActiveAdmin.register User do
       f.input :manager
       f.input :password
       f.input :password_confirmation
-    #      f.select :sex, [['Male', 'male'],['Female', 'female']]
      
     end
     f.actions

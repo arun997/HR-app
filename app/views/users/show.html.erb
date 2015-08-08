@@ -58,11 +58,18 @@
   
   <td> <% @request.each do |request| %></td>
   <table style="width:100%">
+    <tr>
+   <th> Employee Name </th>
+   <th> From </th>
+   <th> To </th>
+   <th> Leave Type </th>
+ </tr>
+    
  
-  <td><strong><%= request.employee_name %></strong></td>
-  <td><strong><%= request.start_date %></strong></td>
-  <td><strong><%= request.end_date %></strong></td>
-  <td><strong><%= request.leave_type %></strong></td>
+  <td><%= request.employee_name %></td>
+  <td><%= request.start_date %></td>
+  <td><%= request.end_date %></td>
+  <td>><%= request.leave_type %></td>
   
 </p>
 </table>
