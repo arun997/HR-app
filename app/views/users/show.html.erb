@@ -54,12 +54,17 @@
 
 <p>
   <strong>Leave Requests:</strong>
-  <% @request.each do |request| %>
-  <%= request.employee_name %>
-  <%= request.start_date %>
-  <%= request.end_date %>
-  <%= request.leave_type %>
-
+  
+  
+  <td> <% @request.each do |request| %></td>
+  <table style="width:100%">
+ 
+  <td><strong><%= request.employee_name %></strong></td>
+  <td><strong><%= request.start_date %></strong></td>
+  <td><strong><%= request.end_date %></strong></td>
+  <td><strong><%= request.leave_type %></strong></td>
+  
 </p>
+</table>
 <% end %>
 

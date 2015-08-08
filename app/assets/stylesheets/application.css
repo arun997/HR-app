@@ -21,25 +21,17 @@
     padding: 0;
 } */
 
-body {
-background: url("/assets/Site/Bodenstown.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
-h1, h6 {
-    margin: 0;
-    font-weight: normal;
-}
+
+
 div#container {
     position: relative;
-    min-height: 850px;
-    border:2px orange solid;
+    min-height: 250px;
+    
+    
     /* background-image: url("/assets/Site/bg3.gif"); */
     max-width: 1000px;
-    min-width: 750px;
+    
     margin: auto;
 }
 div#first-column {
@@ -59,7 +51,7 @@ div#content {
 	padding: 3px;
     margin: 3px 3px 3px 5px;
     /*background: rgb(240, 240, 240);*/
-    background-image: url("/assets/Site/bg3.gif");
+   
     border: 1px solid gray;
     min-height: 850px;
     width: 700px;
@@ -67,20 +59,13 @@ div#content {
 div#header,
 div#footer,
 div#menu {
-    background: rgb(20, 20, 20);
-    padding: 3px;
-    border:2px orange solid;
-    max-width: 994px;
-    min-width: 744px;
+   
+    max-width: 100%;
+    min-width: 100%;
     margin: auto;
 }
 
-div#header {
-	border:2px orange solid;
- 	border-top-left-radius:25px;
- 	border-top-right-radius:25px;
-		
-}
+
 
 div#menu {
     border-bottom: none;
@@ -89,8 +74,7 @@ div#menu {
 }
 div#header {
     border-bottom: none;
-    background-image: url("/assets/Site/BookHeader.jpg");
-    width: 1024px;
+    width: 100%;
     height: 170px;
 }
 div#footer {
@@ -101,8 +85,7 @@ div.box {
 	margin: 0px 0px 30px 5px;
 	padding: 5px;
 	height: 260px;
-	border:2px orange solid;
-	background-image: url("/assets/Site/bg3.gif");
+
  	border-radius:9px;
  	-moz-border-radius:9px; /* Old Firefox */
 
@@ -112,8 +95,6 @@ div.searchbox {
 	margin: 0px 0px 30px 5px;
 	padding: 5px;
 	height: 55px;
-	border:2px orange solid;
-	background-image: url("/assets/Site/bg3.gif");
  	border-radius:9px;
  	-moz-border-radius:9px; /* Old Firefox */
 
@@ -123,9 +104,7 @@ div.loginbox {
 	margin: 0px 0px 30px 5px;
 	padding: 5px;
 	height: 65px;
-	border:2px orange solid;
  	border-radius:9px;
- 	background-image: url("/assets/Site/bg3.gif");
  	-moz-border-radius:9px; /* Old Firefox */
 
 }
@@ -176,13 +155,12 @@ div.loginbox {
 	height: 30px;
 	text-align:center;
 	font-size: 30px;
-	color:firebrick;
+	color:#FFFFFF;
 	padding-top: 10px;
 	margin:0px;
 	margin-bottom: 10px;
 	margin-top: 5px;
 	margin-left: 5px;
-	background-image:url('/assets/Site/PageHeader.jpg');
 	background-size:40px;
 	border:2px silver solid;
  	border-radius:9px;
@@ -699,71 +677,6 @@ div.loginbox {
 }
 
 
-/* Image Picker */
-			.list_carousel {
-				background-color: #ccc;
-				margin: 0 0 0px 0px;
-				width: 490px;
-			}
-			
-			.list_carousel img {
-				width: 70px;
-				height: 70px;
-			}
-
-			
-			.list_carousel ul {
-				margin: 0;
-				padding: 0;
-				list-style: none;
-				display: block;
-			}
-			.list_carousel li {
-				font-size: 40px;
-				color: #999;
-				text-align: center;
-				background-color: #eee;
-				border: 3px solid #999;
-				width: 70px;
-				height: 70px;
-				padding: 0;
-				margin: 6px;
-				display: block;
-				float: left;
-			}
-			.list_carousel.responsive {
-				width: auto;
-				margin-left: 0;
-			}
-			.clearfix {
-				float: none;
-				clear: both;
-			}
-			.prev {
-				float: left;
-				margin-left: 10px;
-			}
-			.next {
-				float: right;
-				margin-right: 10px;
-			}
-			.pager {
-				float: left;
-				width: 400px;
-				text-align: center;
-			}
-			.pager a {
-				margin: 0 5px;
-				text-decoration: none;
-			}
-			.pager a.selected {
-				text-decoration: underline;
-			}
-			.timer {
-				background-color: #999;
-				height: 6px;
-				width: 0px;
-			}
 
 /* Chosen Image Display in Admin Panel */
 #imgDisplay {
