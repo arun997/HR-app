@@ -7,7 +7,8 @@
 <%= csrf_meta_tags %>
 </head>
 <body>
-<div id='header'>
+  
+<div id='logo'>
 <strong><h1>Human Resource Department</h1></strong>
 <p class="navbar-text pull-right">
 <% if user_signed_in? %> 
@@ -18,7 +19,7 @@
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 <% end %>
 </div>
-
+ 
 
 <div id="navbar">
 <ul>
