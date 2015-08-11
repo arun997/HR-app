@@ -16,8 +16,10 @@
   <%= link_to 'Edit profile', edit_path(current_user), :class => 'navbar-link' %> |
   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 <% else %>
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+  <%= link_to "", new_user_session_path, :class => 'navbar-link'  %>
+  
 <% end %>
+   <%= link_to "Admin Login", '/admin/dashboard', :class => 'navbar-link'  %>
 </div>
  
 
