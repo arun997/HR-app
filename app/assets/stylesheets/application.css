@@ -27,11 +27,7 @@
 div#container {
     position: relative;
     min-height: 250px;
-    
-    
-    /* background-image: url("/assets/Site/bg3.gif"); */
     max-width: 1000px;
-    
     margin: auto;
 }
 
@@ -40,7 +36,6 @@ div#first-column {
     position: absolute;
     top: 0;
     bottom: 0;
-    /* background-image: url("/assets/Site/bg3.gif"); */
     width: 279px;
     margin: 3px;
 }
@@ -51,8 +46,6 @@ div#content {
 	
 	padding: 3px;
     margin: 3px 3px 3px 5px;
-    /*background: rgb(240, 240, 240);*/
-   
     border: 1px solid gray;
     min-height: 850px;
     width: 700px;
@@ -140,7 +133,6 @@ div#footer {
 }
 
 
-/* Detailed Display Edit\Back Links */
 #DisplayLinks a:hover {
 	background-color:transparent;
 }

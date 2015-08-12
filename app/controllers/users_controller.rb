@@ -14,11 +14,6 @@ class UsersController < ApplicationController
       render action: :show
     end
   end
-    
-#    @request = Request.find(current_user.user_id)
-#    @request = Request.find(@user.user_id)
-#    end
-
   
   
   def new

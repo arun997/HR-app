@@ -23,8 +23,6 @@ ActiveAdmin.register Request do
       f.input :start_date
       f.input :end_date
       f.input :leave_type
-      
-    #      f.select :sex, [['Male', 'male'],['Female', 'female']]
      
     end
     f.actions
